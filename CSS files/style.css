@@ -1,60 +1,34 @@
-/* * {
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+header {
+    background-color: rgb(193, 253, 243);
+}
+
 body {
     font-size: 1.2rem;
     background-color: whitesmoke;
-
-
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
-header {
-    background-color: teal;
+h2 { 
+    font-size: 1.75rem;  
+    font-weight: 600;
 }
 
 footer {
-    background-color: teal;
-    left: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    
+    background-color: rgb(193, 253, 243);
 }
 
 .container {
     width: 90%;
     margin: 0 auto;
-
 }
-
-.header-container {
-    
-}
-
-.main-container {
-    min-height: 200px;
-    background-color: aquamarine;
-
-}
-
-.footer.container {
-
-}
-
-nav {
-
-}
-
-nav a {
-    list-style: none;
-    text-decoration: none;
-    
-} */
