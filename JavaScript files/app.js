@@ -69,7 +69,7 @@ function thirdQuestion() {
         alert("Correct! Katy is having great fun completing a Full Stack Bootcamp with Tech Educators!");
     } else if (bootcamp === "no" || bootcamp === "n") {
         // console.log("Hmmm, that's not quite right. Katy is completeing a Full Stack Bootcamp with Tech Educators!");
-        alert("Hmmm, that's not quite right. Katy is completeing a Full Stack Bootcamp with Tech Educators!");
+        alert("Hmmm, that's not quite right. Katy is completing a Full Stack Bootcamp with Tech Educators!");
     }
 }
 
