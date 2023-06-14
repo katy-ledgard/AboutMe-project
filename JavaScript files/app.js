@@ -4,15 +4,18 @@ console.log("Welcome!")
 
 let user;
 
+alert("Hi there! Welcome to my page!")
 
 function userName() {
     // user = console.log("Why hello there! Who might you be? Please tell me your name.")
-    user = prompt("Why hello there! Who might you be? Please tell me your name.")
-    alert("Hi " + user + "! Welcome to my page. My name is Katy - I hope you will enjoy getting to know about me!")
+    user = prompt("Who might you be? Please tell me your name.")
+    alert("Hi " + user + "! My name is Katy - I hope you will enjoy getting to know about me!")
     console.log(user)
 }
 
 userName()
+
+alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
 function firstQuestion() {
 
@@ -74,3 +77,48 @@ function thirdQuestion() {
 }
 
 thirdQuestion()
+
+function fourthQuestion() {
+
+    let born = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
+
+    while (born != "y" && born != "yes" && born != "n" && born != "no") {
+            alert("Please answer with yes/no or y/n.");
+            born = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
+    
+}
+    if (born === "yes" || born === "y") {
+        // console.log("Nearly! Right musical, wrong character! Katy's dream role is Eponine!");
+        alert("Nearly! Right musical, wrong character! Katy's dream role is Eponine!");
+    } else if (born === "no" || born === "n") {
+        // console.log("You got it. Katy's dream role is actually Eponine from Les Mis!")
+        alert("You got it. Katy's dream role is actually Eponine from Les Mis!");
+    } 
+    
+}
+
+fourthQuestion()
+
+
+function fifthQuestion() {
+
+    let born = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
+
+    while (born != "y" && born != "yes" && born != "n" && born != "no") {
+            alert("Please answer with yes/no or y/n.");
+            born = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
+    
+}
+    if (born === "yes" || born === "y") {
+        // console.log("Yes, that's the goal!");
+        alert("Yes, that's the goal!");
+    } else if (born === "no" || born === "n") {
+        // console.log("False - I DO want to become a Junior Developer!")
+        alert("False - I DO want to become a Junior Developer!");
+    } 
+    
+}
+
+fifthQuestion()
+
+alert("Thank you " + user + "! I hope you enjoyed my quiz!")
