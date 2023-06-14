@@ -17,7 +17,7 @@ userName()
 
 alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
-function firstQuestion() {
+// function firstQuestion() {
 
     let born = prompt("Was Katy born in Norfolk?").toLowerCase();
 
@@ -34,11 +34,11 @@ function firstQuestion() {
         alert("Oops! Katy WAS born in Norfolk!");
     } 
     
-}
+// }
 
-firstQuestion()
+// firstQuestion()
 
-function secondQuestion() {
+// function secondQuestion() {
 
     let beach = prompt("Is Cromer Katy's favourite beach?").toLowerCase();
 
@@ -54,11 +54,11 @@ function secondQuestion() {
         // console.log("That's right! Katy's favourite beach is West Runton, not Cromer!");
         alert("That's right! Katy's favourite beach is West Runton, not Cromer!");        
     } 
-}
+// }
 
-secondQuestion()
+// secondQuestion()
 
-function thirdQuestion() {
+// function thirdQuestion() {
 
     let bootcamp = prompt("Is Katy completing a Full Stack Bootcamp with Tech Educators?").toLowerCase();
 
@@ -74,51 +74,52 @@ function thirdQuestion() {
         // console.log("Hmmm, that's not quite right. Katy is completeing a Full Stack Bootcamp with Tech Educators!");
         alert("Hmmm, that's not quite right. Katy is completing a Full Stack Bootcamp with Tech Educators!");
     }
-}
+// }
 
-thirdQuestion()
+// thirdQuestion()
 
-function fourthQuestion() {
+// function fourthQuestion() {
 
-    let born = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
+    let role = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
 
-    while (born != "y" && born != "yes" && born != "n" && born != "no") {
+    while (role != "y" && role != "yes" && role != "n" && role != "no") {
             alert("Please answer with yes/no or y/n.");
-            born = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
+            role = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
     
 }
-    if (born === "yes" || born === "y") {
+    if (role === "yes" || role === "y") {
         // console.log("Nearly! Right musical, wrong character! Katy's dream role is Eponine!");
         alert("Nearly! Right musical, wrong character! Katy's dream role is Eponine!");
-    } else if (born === "no" || born === "n") {
+    } else if (role === "no" || role === "n") {
         // console.log("You got it. Katy's dream role is actually Eponine from Les Mis!")
         alert("You got it. Katy's dream role is actually Eponine from Les Mis!");
     } 
     
-}
+// }
 
-fourthQuestion()
+// fourthQuestion()
 
 
-function fifthQuestion() {
+// function fifthQuestion() {
 
-    let born = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
+    let dev = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
 
-    while (born != "y" && born != "yes" && born != "n" && born != "no") {
+    while (dev != "y" && dev != "yes" && dev != "n" && dev != "no") {
             alert("Please answer with yes/no or y/n.");
-            born = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
+            dev = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
     
 }
-    if (born === "yes" || born === "y") {
+    if (dev === "yes" || dev === "y") {
         // console.log("Yes, that's the goal!");
         alert("Yes, that's the goal!");
-    } else if (born === "no" || born === "n") {
+    } else if (dev === "no" || dev === "n") {
         // console.log("False - I DO want to become a Junior Developer!")
         alert("False - I DO want to become a Junior Developer!");
     } 
     
-}
+// }
 
-fifthQuestion()
+// fifthQuestion()
 
 alert("Thank you " + user + "! I hope you enjoyed my quiz!")
+
