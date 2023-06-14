@@ -21,7 +21,7 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
     let born = prompt("Was Katy born in Norfolk?").toLowerCase();
 
-    while (born != "y" && born != "yes" && born != "n" && born != "no") {
+    while (born != "y" && born != "yes" && born != "n" && born != "no" /*&& born != ""*/) {
             alert("Please answer with yes/no or y/n.");
             born = prompt("Was Katy born in Norfolk?").toLowerCase();
     
@@ -42,7 +42,7 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
     let beach = prompt("Is Cromer Katy's favourite beach?").toLowerCase();
 
-    while (beach != "yes" && beach != "y" && beach != "no" && beach != "n") {
+    while (beach != "yes" && beach != "y" && beach != "no" && beach != "n" /*&& beach != ""*/) {
         alert("Please answer with yes/no or y/n.")
         beach = prompt("Is Cromer Katy's favourite beach?").toLowerCase();
     }
@@ -62,7 +62,7 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
     let bootcamp = prompt("Is Katy completing a Full Stack Bootcamp with Tech Educators?").toLowerCase();
 
-    while (bootcamp != "yes" && bootcamp != "y" && bootcamp != "no" && bootcamp != "n") {
+    while (bootcamp != "yes" && bootcamp != "y" && bootcamp != "no" && bootcamp != "n" /*&& bootcamp != ""*/) {
         alert("Please answer with yes/no or y/n.")
         bootcamp = prompt("Is Katy completing a Full Stack Bootcamp with Tech Educators?").toLowerCase();
     }
@@ -82,7 +82,7 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
     let role = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
 
-    while (role != "y" && role != "yes" && role != "n" && role != "no") {
+    while (role != "y" && role != "yes" && role != "n" && role != "no" /*&& role != ""*/) {
             alert("Please answer with yes/no or y/n.");
             role = prompt("Is Cosette from Les Mis Katy's dream role?").toLowerCase();
     
@@ -104,7 +104,7 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
     let dev = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
 
-    while (dev != "y" && dev != "yes" && dev != "n" && dev != "no") {
+    while (dev != "y" && dev != "yes" && dev != "n" && dev != "no" /*&& dev != ""*/) {
             alert("Please answer with yes/no or y/n.");
             dev = prompt("Does Katy want to be a Junior Developer?").toLowerCase();
     
@@ -121,5 +121,45 @@ alert("I have a quiz for you! Please answer with yes/no or y/n.")
 
 // fifthQuestion()
 
-alert("Thank you " + user + "! I hope you enjoyed my quiz!")
 
+// Add 6th Q that allows user to take numeric input to guess a number
+// alert user if their guess is too high or too low
+//give 4 chances to guess number
+//after all chances have been used, give answer
+//use a loop of some kind
+
+let number = 6; 
+
+console.log("testing")
+
+for (let i = 4; i > 0; i--) {
+    let guess = prompt("I am thinking of a number between 1 and 10. Can you guess what it is? You have four tries!");   
+
+if  (guess > number) {
+    alert("Oops, too high!");
+    // guess = prompt("I am thinking of a number between 1 and 10. Can you guess what it is? You have four tries!");
+} else if (guess < number) {
+    alert("Uh-oh! Too low!");
+    // guess = prompt("I am thinking of a number between 1 and 10. Can you guess what it is? You have four tries!");
+} else if (guess == number) {
+    alert("Woohoo! You guessed it!");
+    break;
+} else {
+    alert("Thats not a valid answer");
+}
+};
+
+alert("The answer was 6!")
+
+//add 7th question using array to have multiple options for answer
+//give 6 attempts to answer
+//q ends when guessed correctly or all attempts are used
+//display possible answers
+//use a loop of some kind
+
+
+//keep track of correct answers
+//tell user how many points they got
+
+
+alert("Thank you " + user + "! I hope you enjoyed my quiz!")
