@@ -9,19 +9,30 @@
     <link rel="stylesheet" href="../CSS files/style.css" />
   </head>
   <body>
+    <div class="container">
     <header>
-      <h1>About Me</h1>
+        <div class = "header-container">
+        
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">Link</a></li>
           <li><a href="#">Link</a></li>
         </ul>
       </nav>
+      </div>
+      </header>
     </header>
     <main>
-      <div class="container main-container">
+      <div class="h1-container">
+        <h1>All About Me</h1>
+        </div>
+      <div class="main-container">
         <section class="bio-section">
+          <section class="bio-img">
+
+          </section>
+          <div class="bio-text">
           <h2>Bio</h2>
           <p>
             Katy was born in the beautiful county of Norfolk, where she enjoys
@@ -39,13 +50,25 @@
             She is currently completing a Full Stack Bootcamp with Tech
             Educators.
           </p>
-          <!--Create a divider with css here-->
+        </div>
+          </section>
+          <section class="divider">
+            <div class ="divider-left"></div>
+            <img src="../images/sunflower.png" alt="a sunflower for decorative purposes">
+            <div class ="divider-right"></div>
+          </section>
+          <section class ="goals-section">
           <h2>Goals</h2>
           <p>
             Katy's career goal is to continue to develop her skills in Full
             Stack Development and become a Junior Developer.
           </p>
           <p>Her dream role is to play Eponine in Les Misérables.</p>
+        </section>
+        <section class="divider">
+          <div class ="divider-left"></div>
+          <img src="../images/sunflower.png" alt="a sunflower for decorative purposes">
+          <div class ="divider-right"></div>
         </section>
         <section class="education-section">
           <h2>Education</h2>
@@ -54,7 +77,13 @@
             <li>Pretend High Academy</li>
             <li>Bird College</li>
           </ul>
-          <!--Create a divider with css here-->
+                    </section>
+                    <section class="divider">
+                      <div class ="divider-left"></div>
+                      <img src="../images/sunflower.png" alt="a sunflower for decorative purposes">
+                      <div class ="divider-right"></div>
+                    </section>
+          <section class ="work-section">
           <h2>Work Experience</h2>
           <ul>
             <li>Legally Blonde, Fake Local Drama Production - Elle Woods</li>
@@ -62,8 +91,13 @@
             <li>Six, National Tour - Alternate Boleyn/Howard.</li>
           </ul>
         </section>
+        <section class="divider">
+          <div class ="divider-left"></div>
+          <img src="../images/sunflower.png" alt="a sunflower for decorative purposes">
+          <div class ="divider-right"></div>
+        </section>
         <!--Add a Top Ten-->
-        <section class="top-10">
+        <section class="top-ten">
           <h2>My Top Ten Musical Theatre Numbers:</h2>
           <ol>
             <li>For Good - Wicked</li>
@@ -81,10 +115,11 @@
       </div>
     </main>
     <footer>
-      <section class="container footer-container">
+      <section class="footer-container">
         <p>&copy; Lorem ipsum dolor sit amet.</p>
       </section>
     </footer>
+    </div>
 
     <script src="../JavaScript files/app.js"></script>
   </body>
